@@ -39,8 +39,8 @@ def update_lines(num, coord_data, lines):
             y_vals = [coord_data[num][ind][0][1], coord_data[num][ind+1][0][1]]
             z_vals = [coord_data[num][ind][0][2], coord_data[num][ind+1][0][2]]
             # NOTE: there is no .set_data() for 3 dim data...
-            line.set_data(x_vals,z_vals)
-            line.set_3d_properties(y_vals)
+            line.set_data(np.array(x_vals),np.array(z_vals))
+            line.set_3d_properties(np.array(y_vals))
 
     # Next 12 lines are legs
     # Leg 1, link 1, link 2, link 3
@@ -52,8 +52,8 @@ def update_lines(num, coord_data, lines):
             y_vals = [coord_data[num][leg_num][link_num][1], coord_data[num][leg_num][link_num+1][1]]
             z_vals = [coord_data[num][leg_num][link_num][2], coord_data[num][leg_num][link_num+1][2]]
             
-            line.set_data(x_vals,z_vals)
-            line.set_3d_properties(y_vals)
+            line.set_data(np.array(x_vals),np.array(z_vals))
+            line.set_3d_properties(np.array(y_vals))
     return lines
 
 
