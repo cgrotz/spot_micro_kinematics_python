@@ -184,11 +184,11 @@ class SpotMicroStickFigure(object):
     """
     def __init__(self,x=0,y=.18,z=0,phi=0,theta=0,psi=0):
         '''constructor'''
-        self.hip_length = 0.055
-        self.upper_leg_length = 0.1075
-        self.lower_leg_length = 0.130
+        self.hip_length = 0.0605
+        self.upper_leg_length = 0.111126
+        self.lower_leg_length = 0.1185
         self.body_width = 0.078
-        self.body_length = 0.186
+        self.body_length = 0.2075
 
         self.x = x
         self.y = y
